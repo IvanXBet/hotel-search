@@ -1,0 +1,19 @@
+.btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+
+  background: var(--btn-color);
+  border-radius: 4px;
+  border: none;
+  padding: 9px 17px;
+}
+
+.btn:hover {
+  background: var(--btn-color-hover);
+}
+.btn:active {
+  background: var(--btn-color-active);
+}

@@ -1,0 +1,8 @@
+.form {
+  display: grid;
+  gap: 24px;
+}
+
+.btn {
+  margin-top: 10px;
+}

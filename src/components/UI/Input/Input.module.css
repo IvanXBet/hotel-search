@@ -1,0 +1,29 @@
+.label {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.error {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.input {
+  margin: 7px 0;
+  padding: 15px;
+  align-items: flex-start;
+  width: 345px;
+
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  outline: none;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.error,
+.error .input {
+  color: red;
+}

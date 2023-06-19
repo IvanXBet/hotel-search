@@ -1,10 +1,13 @@
-import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Routing } from "./pages";
+
+import "./styles/global.css";
 
 function App() {
   return (
-    <div className="App">
-      <button>hi</button>
-    </div>
+    <BrowserRouter>
+      <Routing />
+    </BrowserRouter>
   );
 }
 
