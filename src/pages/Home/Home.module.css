@@ -1,0 +1,29 @@
+.home {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+
+  position: relative;
+
+  height: 100vh;
+  padding: 98px 208px;
+  background-color: var(--bg-color);
+}
+
+.nav {
+  position: absolute;
+  top: 32px;
+}
+.filter {
+  grid-column: 1;
+  grid-row: 1;
+}
+.favorites {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.main {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
