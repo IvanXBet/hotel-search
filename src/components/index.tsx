@@ -3,3 +3,8 @@ export * from "./AuthForm/AuthForm";
 export * from "./Nav/Nav";
 export * from "./FilterForm/FilterForm";
 export * from "./Favorites/Favorites";
+export * from "./Rating/Rating";
+export * from "./Slider/Slider";
+export * from "./MainBlock/MainBlock";
+export * from "./Hotels/Hotels";
+export * from "./HotelCard/HotelCard";

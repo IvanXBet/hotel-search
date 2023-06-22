@@ -1,11 +1,7 @@
-import cn from "classnames";
-
 import { FilterFormProps } from "./FilterForm.interface";
 
 import { Card } from "../Card/Card";
 import { Button, Input } from "../UI";
-
-import styles from "./FilterForm.module.css";
 
 export const FilterForm = ({ className }: FilterFormProps) => {
   return (

@@ -4,6 +4,7 @@ import { Button, Input } from "../UI";
 import { IUser } from "../../interface/User.interface";
 
 import styles from "./AuthForm.module.css";
+import { isValidEmail, isValidPassword } from "../../utils/auth";
 
 export const AuthForm = () => {
   const {
@@ -16,10 +17,7 @@ export const AuthForm = () => {
   const onSubmit = async (data: IUser) => {
     console.log(data);
   };
-  function isValidEmail(email: string) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <Input
@@ -39,7 +37,8 @@ export const AuthForm = () => {
           required: { value: true, message: "Заполните password" },
           validate: {
             validPassword: value =>
-              value.length >= 8 || "Пароль должен быть не менее 8 символов",
+              isValidPassword(value) ||
+              "Пароль должен быть не менее 8 символов",
           },
         })}
         error={errors.password?.message}
